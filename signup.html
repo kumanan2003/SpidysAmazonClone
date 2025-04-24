@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body id="backimg">
+    <div id="Login">
+        <h1 id="head">Signup</h1>
+        <form onsubmit="register(event)">
+            <h3 id="id">Create Spidy Id</h3>
+            <input type="text" id="newUsername" required><br>
+            <h3 id="id">Create Spidy Code</h3>
+            <input type="password" id="newPassword" required><br><br>
+
+            <!-- Use real submit button here -->
+            <a href="#" id="btns" type="submit" onclick="register(event)">Register</a>
+            <a href="index.html" id="atag">Login</a>
+        </form>
+    </div>
+
+    <script>
+        function register(event) {
+            event.preventDefault(); // Stop form from submitting
+
+            const newUsername = document.getElementById("newUsername").value;
+            const newPassword = document.getElementById("newPassword").value;
+
+            if (newUsername && newPassword) {
+                localStorage.setItem("storedUsername", newUsername);
+                localStorage.setItem("storedPassword", newPassword);
+
+                alert("Signup successful! Please login.");
+                window.location.href = "index.html";
+            } else {
+                alert("Please fill out all fields.");
+            }
+        }
+    </script>
+</body>
+</html>

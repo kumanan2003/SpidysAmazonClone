@@ -1,0 +1,57 @@
+#id{
+    color: antiquewhite;
+}
+#Login{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 390px;
+    padding-left: 35px;
+    padding-right: 35px;
+    opacity: 80%;
+}
+#head{
+    color: antiquewhite;
+    margin-left: 45px;
+}
+#backimg{
+    background-image: url(./Spider\ Symbol.jpg);
+}
+#btns{
+    margin-right: 60px;
+     box-sizing: border-box; 
+    background-color: rgb(228, 233, 238);
+    padding: 7px;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+button{
+    color: antiquewhite;
+}
+#atag{
+    box-sizing: border-box;
+    background-color: rgb(228, 233, 238);
+    border-radius: 4px;
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}
+#btns:hover{
+    background-color: rgb(185, 40, 40);
+    cursor: pointer;
+}
+#atag:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+#forget{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 50px;
+    color: whitesmoke;
+}
+#forget:hover{
+    color: red;
+}
